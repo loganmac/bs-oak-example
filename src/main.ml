@@ -6,10 +6,6 @@ type msg =
   | Reset      
   | Set of int
   [@@bs.deriving {accessors}]
-  (*
-    This is a nice quality-of-life addon from Bucklescript,
-    it will generate function names for each constructor name.
-  *)
 
 let init () = 4 &! []
 
